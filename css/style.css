@@ -430,40 +430,40 @@
   }
   #jd_logo .logo_input {
     display: inline-block;
-    width: 537px;
+    width: 540px;
     height: 40px;
     border:2px solid #B71D1D;
     background: rgba(255,255,255,1);
   }
   #jd_logo .logo_input input{
-    width: 456px;
-    height: 37px;
-    border:0px solid #ddd;
-    -webkit-appearance: textfield;
-    background-color: white;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    -webkit-rtl-ordering: logical;
-    -webkit-user-select: text;
-    cursor: auto;
-    color: #666;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin: 0em 0em 0em 0em;
-    font: 11px BlinkMacSystemFont;
-    outline: none;
+  width: 456px;
+  height: 37px;
+  border:0px solid #ddd;
+  -webkit-appearance: textfield;
+  background-color: white;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  -webkit-user-select: text;
+  cursor: auto;
+  color: #666;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 11px;
+  outline: none;
 }
  #jd_logo .logo_input .sth {
+  float: right;
   border:0px;
-  width: 78px;
+  width: 76px;
   height: 40px;
   background: #B71D1D;
   outline: none;
@@ -473,7 +473,7 @@
   text-shadow: none;
   display: inline-block;
   color: #FFF;
-  font-size: 16px;
+  font-size: 15px;
 }
 #jd_logo .logo_shop {
   position: relative;
@@ -773,7 +773,7 @@
 #focus .focus_right {
   display: inline-block;
   vertical-align: top;
-  width: 242px;
+  width: 240px;
   height: 454px;
   margin-top: 12px;
   background-color: rgba(255,255,255,1);
@@ -820,7 +820,7 @@
 }
 .icon li {
   float: left;
-  width: 58px;
+  width: 57px;
   height: 70px;
   border: 1px solid #ddd;
 }
