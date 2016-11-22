@@ -1,0 +1,277 @@
+  * {
+		padding: 0px;
+		margin:0px;
+	}
+	body {
+		font-family: "Microsoft YaHei","Hiragino Sans GB";
+	}
+	a {
+    color: #666;
+    text-decoration: none;
+  }
+  #look {
+    display: inline-block;
+    width: 33px;
+    height: 135px;
+    position: fixed;
+    z-index: 99;
+    background: url(../img/jd_img.png) -367px -0px no-repeat;
+    right: 0px;
+    bottom: 50%;
+  }
+  #look:hover {
+    background: url(../img/jd_img.png) -334px -0px no-repeat;
+  }
+	#All {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+    z-index: 0px;
+	}
+	#head {
+		position: relative;
+		width: 100%;
+		height: 90px;
+		/*background-color: green;*/
+		border-bottom: 5px solid rgba(220,220,220,0.5);/*线0.5的透明度*/
+		box-shadow: 0 0 15px #ddd;
+	}
+	#head1 {
+		width: 1210px;
+		height: 90px;
+		background: #fff;
+		margin: 0 auto;
+	}
+	#head1 .logo {
+    width: 160px;
+    height: 45px;
+    float: left;
+    margin-top: 24px;
+    background: url(../img/jd_img.png) -4px -4px no-repeat;
+	}
+	#head1 p {
+		float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+    border-left: 1px solid  #bbb;
+    margin-left: 25px;
+    padding-left: 25px;
+    margin-top: 34px;
+    letter-spacing: 5px;
+	}
+	#he2 {
+		position: relative;
+		display: inline-block;
+		width: 117px;
+		height: 34px;
+    /*border: 1px solid red;*/
+    float: right;
+    margin-top: 55px;
+    font-size: 16px;
+    float: right;
+    color: #999;
+	}
+	#he2 a {
+		color: #333;
+	}
+	#center {
+		position: relative;
+		width: 100%;
+		height: 623px;
+		/*background-color: pink;*/
+	}
+	#center1 {
+		margin: 0 auto;
+    margin-top: 60px;
+		/*border:2px solid #000;*/
+		width: 1210px;
+		height: 590px;
+		
+	}
+	#input {
+		margin-left: 190px;
+		width: 520px;
+		height: 623px;
+		/*background-color: gray;*/
+		float: left;
+    border-right: 1px solid #ddd;
+	}
+	#input input {
+		outline: none;
+	}
+	#inp  {
+    position: relative;
+    border: solid 1px #ddd;
+    width: 420px;
+    height: 52px;
+    z-index: 13;
+	}
+	#inp label {
+    float: left;
+    width: 100px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 20px;
+    font-size: 15px;
+    letter-spacing: 5px;/*控制字体间的间距*/
+  }
+  #inp label .down_box {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: green;
+    float: right;
+    margin-top: 22px;
+    background: url(../img/jd_img.png) -3px -157px no-repeat; /*-20px -158px*/
+  }
+  .down_box .down_box_img {
+    background: url(../img/jd_img.png) -20px -157px no-repeat;
+  }
+  #selected {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    background: #fff;
+    z-index: 20;
+    margin-top:-332px;
+    overflow: auto;/*超出div自动形成下拉框*/
+  }
+  #selected ul {
+    list-style-type: none;
+  } 
+  #selected ul li {
+    text-align: center;
+    line-height: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  #form_account{
+  	position: absolute;
+    z-index: 2;
+    line-height: 46px;
+    margin-left: 20px;
+    margin-top: 1px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    color: rgb(204, 204, 204);
+    display: inline;
+    outline: none;
+    border: 0px;
+    width: 155px;
+  }
+  .input-tip {
+  	color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+    /*margin-top: 20px;*/
+  }
+  #inp .code {
+  	position: absolute; 
+  	right: 0; 
+  	top: 0; 
+  	text-align: center;
+  	font-family:"Astloch", Arial, sans-serif;
+  	font-size: 30px;
+  	background: #000;
+  	color: #fff;
+  }
+  #ok {
+  	width: 300px;
+  	height: 20px;
+  	/*border:1px solid red;*/
+  	line-height: 20px;
+  }
+  #ok input {
+  	margin-right: 10px;
+  }
+  #btn{
+  	width:398px;
+  	height: 54px; 
+  	color:#fff; 
+  	background-color: #e22; 
+  	border:0; 
+  	margin-top: 40px;
+  	font-size: 16px; 
+  	font-family: "微软雅黑"
+  }
+  #phone {
+    width: 400px;
+    height: 623px;
+    float: left;
+   /* background-color: red;*/
+
+  }
+  #phone_img {
+  	width: 213px;
+  	height: 270px;
+  	border:0px solid green;
+  	margin: 0 auto;
+  	background: url(../img/canvas.png) -860px -160px no-repeat;
+  }
+  #company {
+  	width: 160px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-bottom: solid 1px #ddd;  
+  }
+  #web {
+  	width: 160px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  #web a {
+    display: block;
+    width: 160px;
+    height: 40px; 
+    background: url(../img/canvas.png) -885px -575px no-repeat;  
+  }
+  #company a {
+    display: block;
+    width: 160px;
+    height: 30px;   
+  }
+  #company a span{
+  	display: inline-block;
+  	width: 30px;
+  	height: 29px;
+  	background: url(../img/canvas.png) -885px -480px no-repeat;
+  } 
+  #company a i {
+  	display: inline-block;
+  	color: #666;
+  	vertical-align: middle;
+    font-style: normal;
+    margin-top: -25px;
+    padding: 10px;
+  }  
+	#footer {
+		margin: 0 auto;
+		width: 1210px;
+		height: 118px;
+		margin-top: -30px;
+		border-top: 1px solid #ddd;
+		/*background-color:green;*/
+	}
+	#links {
+		width: 1000px;
+		height: 30px;
+		margin-left: 190px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  #links a , #Copyright{
+  	font-size: 12px;
+    text-align: center;
+    color: #999;
+    margin: 0 5px;
+	}
+	#Copyright {
+		width: 400px;
+		margin: 0 auto;
+	}

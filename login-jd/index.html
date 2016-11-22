@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<title>个人注册</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<!-- 引进字体样式 -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Astloch:regular,bold' rel='stylesheet' type='text/css' />
+<body>
+  <div id="look"></div>
+	<div id="All">
+		<div id="head">
+		  <div id="head1">
+			  <a href="https://www.jd.com/" class="logo"></a>
+			  <p>欢迎注册</p>
+			  <div id="he2">
+			  	已有账号
+			  	<a href="https://passport.jd.com/new/login.aspx">请登录</a>
+			  </div>
+		  </div>
+		</div>
+	  <div id="center"> 
+			<form action="">
+				<div id="center1">
+			  	<div id="input">
+			  		<div id="inp">
+			  			<label for="">用户名</label>
+					    <input type="text" id="form_account" name="regName" class="name" value="您的用户名和登录名">
+			  		</div>
+	          <div class="input-tip">
+					    <span class="name_error"></span>
+			      </div>
+			  		<div id="inp">
+			  			<label for="">设置密码</label>
+					    <input type="text" id="form_account" name="regName" class="pwd" value="建议至少使用两种字符组合">
+			  		</div>
+			  		<div class="input-tip">
+					    <span class="pwd_error"></span>
+					  </div>
+			  		<div id="inp">
+			  			<label for="">确认密码</label>
+					    <input type="text" id="form_account" name="1" class="pwd_again" value="请再次输入密码">
+			  		</div>
+			  		<div class="input-tip">
+					    <span class="pwd_ag_error"></span>
+					  </div>
+
+			  		<div id="inp">
+			  			<label for="">中国+86
+			  			  <span class="down_box">
+			  			  </span>
+			  			</label>
+					    <input type="text" id="form_account" name="1" class="phone" value="建议使用常用手机">
+			  		</div>
+			  		<div class="input-tip">
+					    <span class="phone_error"></span>
+					  </div>
+
+			  		<div id="inp">
+			  			<label for="">验证码</label>
+					    <input type="text" id="form_account" name="1" class="code_one" value="请输入验证码">
+					    <label class="code"></label>
+			  		</div>
+			  		<div class="input-tip">
+					    <span class="code_error"></span>
+					  </div>
+					  <div style="color:#333; font-size:12px" id="ok">
+					  	<input type="checkbox" name="agreen" id="agreen"  checked="checked" />
+					  	我已阅读并同意
+				      <a style="color: #38f">《京东用户注册协议》</a>
+					  </div>
+					  <input type="submit" name="btn" id="btn" value="立即注册">
+					  <div class="input-tip">
+							<span></span>
+						</div>
+			  	</div>
+			    <div id="phone">
+			      <div id="phone_img"></div>
+			      <div id="company">
+			      	<a href="#">
+			      	  <span></span>
+			      	  <i>企业用户注册</i>
+			      	</a>
+			      </div>
+			      <div id="web">
+			      	<a href="#">
+			      	</a>
+			      </div>
+			    </div>
+			  </div>
+			</form> 
+		</div>
+			
+		<div id="footer">
+		  <div id="links">
+		  	<a href="">关于我们&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">联系我们&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">人才招聘&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">商家入驻&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">广告服务&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">手机京东&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">友情链接&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">销售联系&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="">京东社区&nbsp&nbsp&nbsp&nbsp|</a>
+		  	<a href="" class="last_a">京东公益</a>
+		  	<div id="selected" style="display:none">
+  			  <ul>
+	  				<li>中国 +86</li>
+	  				<li>台湾 +886</li>
+	  				<li>香港 +852</li>
+	  				<li>日本 +81</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+	  				<li>中国 +86</li>
+	  				<li>台湾 +886</li>
+	  				<li>香港 +852</li>
+	  				<li>日本 +81</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+	  				<li>韩国 +82</li>
+  			  </ul>
+  			</div>
+		  </div>
+		  <div id="Copyright">
+		    Copyright©2004-2016  京东JD.com 版权所有
+		  </div>
+  	</div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function() {
+      //生成验证码
+      // 二维数组, 用于生成随机验证码
+	    var array = [["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"], ["0", "1", "2", "3", "4", "6", "7", "8", "9"]];
+	    var str = "";
+
+	    randomCode();
+      //点击更换验证码
+      $(".code").click(function () {
+      	console.log("code");
+      	randomCode();
+      })
+      function randomCode () {
+      	str = "";
+      	for(var i = 0; i < 4; i++) {
+      		//随机生成坐标
+      		var temp = Math.random();
+      		temp = temp < 0.5 ? Math.floor(temp) : Math.ceil(temp);//floor是向下取整，ceil是向上取整，所以temp = 0或者1
+      		var length = array[temp].length;
+      		//从任意值开始至任意值
+      		var index = parseInt(Math.random()*length);
+      		console.log(str);
+      		str += array[temp][index];
+      		
+      	}
+      	$(".code").html(str);
+      }
+
+      //下拉框
+      $('.down_box').click(function() {
+      	if($("#selected").hasClass("show")) {
+      		$('#selected').hide(1000).removeClass("show");
+      		$(this).css("background", 'url(img/jd_img.png) -3px -157px no-repeat');
+      		console.log("1111");
+      	}
+      	else {
+      		$(this).css("background", 'url(img/jd_img.png) -20px -157px no-repeat');
+      		$('#selected').show(1000).addClass("show");
+      	}
+      });
+
+			// 用户名正则表达式
+	    var uname_reg = /^[\u4e00-\u9fa5]{4,20}$|^[\dA-Za-z_\-]{4,20}$/;
+	    var uname_ok = false;
+	   //  //用户名
+	    $(".name").focus(function () {
+	    	$(this).attr("value", "");
+	    	$(this).parent().css("border-color", "#999");
+		    $(".name_error").css("color", "#c5c5c5");
+		    $(".name_error").html("支持中文, 字母, 数字, \"-\", \"_\", 的组合, 4-20个字符");
+	    });
+	    $(".name").blur(function () {
+	    	if ($(this).val() == "") {
+					this.value = this.defaultValue;
+					$(".name_error").html("");
+					uname_ok = false;
+    	  }
+			  else if($(this).val().length < 4 || $(this).val().length > 20){
+					$(".name_error").html("长度只能在4-20个字符之间");
+		      $(".name_error").css("color", "red");
+		      $(this).parent().css("border-color", "red");
+		      uname_ok = false;
+				}
+				else if (!$(this).val().match(uname_reg)) {
+					$(".name_error").html("格式错误, 仅支持中文, 字母, 数字, \"-\", \"_\"的组合");
+					$(".name_error").css("color", "red");
+					$(this).parent().css("border-color", "red");
+					uname_ok = false;
+				}
+				else {
+					uname_ok = true;
+				}
+	    });
+      //密码
+      var pwd_reg = /^(?![A-Z]+$)(?![a-z]+$)(?!\d+$)(?![\W_]+$)\S{6,20}$/;
+	    var pwd_ok = false;
+
+			$('.pwd').focus(function() {
+				$(this).css("outline", "none");
+				$(this).attr("value", "");
+				$(this).parent().css("border-color", "#999");
+				$(".pwd_error").css("color", "#c5c5c5");
+				$(".pwd_error").html("建议使用字母, 数字和符号两种及以上的组合, 6-20个字符");
+			});
+			$('.pwd').blur(function() {
+				if($(this).value == "") {
+					this.value = this.defaultValue;
+					$(".pwd_error").html("");
+					pwd_ok = false;
+				}
+				else if($(this).val().length < 6 || $(this).val().length > 20) {
+					$(".pwd_error").html("长度只能在6-20个字符之间");
+		      $(".pwd_error").css("color", "red");
+		      $(this).parent().css("border-color", "red");
+		      pwd_ok = false;
+				}
+				else if (!$(this).val().match(pwd_reg)) {
+					// 不是两种及以上的组合
+					$(".pwd_error").html("有被盗风险, 建议使用字母, 数字和符号两种及以上组合");
+					$(".pwd_error").css("color", "red");
+					$(this).parent().css("border-color", "red");
+					pwd_ok = false;
+				} 
+				else {
+					pwd_ok = true;
+				}
+			});
+
+      // 再次确认
+      var confirm_pwd_ok = false;
+			$('.pwd_again').focus(function() {
+				$(this).css("outline", "none");
+				$(this).attr("value", "");
+				$(this).parent().css("border-color", "#999");
+				$(".pwd_ag_error").css("color", "#c5c5c5");
+				$(".pwd_ag_error").html("请再次输入密码");
+			});
+			$('.pwd_again').blur(function() {
+				if($(this).value == "") {
+					this.value = this.defaultValue;
+					$(".pwd_ag_error").html("");
+					confirm_pwd_ok = false;
+				}
+				else if ($(this).val()!=$(".pwd").val()) {
+					//再次输入密码不一致
+					$(".pwd_ag_error").html("两次输入的密码不一致");
+		      $(".pwd_ag_error").css("color", "red");
+		      $(this).parent().css("border-color", "red");
+		      confirm_pwd_ok = false;
+				}
+				else {
+					confirm_pwd_ok = true;
+				}
+			});	
+			// 手机号码
+      var phone =  /^1[3|4|5|7|8]\d{9}$/;
+      var phone_ok = false;
+			$('.phone').focus(function() {
+				$(this).css("outline", "none");
+				$(this).attr("value", "");
+				$(this).parent().css("border-color", "#999");
+				$(".phone_error").css("color", "#c5c5c5");
+				$(".phone_error").html("验证完成后, 可以使用该手机登录和找回密码");
+			});
+			$('.phone').blur(function() {
+				if($(this.value) == "") {
+					this.value = this.defaultValue;
+					$(".phone_error").html("");
+					phone_ok = false;
+				}
+				else if ($(this).val().length != 11) {
+					//格式错误
+					$(".phone_error").html("格式错误");
+		      $(".phone_error").css("color", "red");
+		      $(this).parent().css("border-color", "red");
+		      phone_ok = false;
+				}
+				else if (!$(this).val().match(phone)) {
+					// 输入的不是手机号码
+					$(".phone_error").html("格式有错");
+					$(".phone_error").css("color", "red");
+					$(this).parent().css("border-color", "red");
+					phone_ok = false;
+				} 
+				else {
+					phone_ok = true;
+				}
+			});	
+			// 验证码
+      var code_ok = false;
+			$('.code_one').focus(function() {
+				$(this).css("outline", "none");
+				$(this).attr("value", "");
+				$(this).parent().css("border-color", "#999");
+				$(".code_error").css("color", "#c5c5c5");
+				$(".code_error").html("看不清? 点击更换验证码");
+			});
+
+			$('.code_one').blur(function() {
+				if($(this.value) == "") {
+					this.value = this.defaultValue;
+					$(".code_error").html("");
+					code_ok = false;
+				}
+				else if ($(this).val() != str) {
+					console.log(str);
+					console.log($(this).val());
+					//验证码错误
+					$(".code_error").html("验证码错误");
+		      $(".code_error").css("color", "red");
+		      $(this).parent().css("border-color", "red");
+		      code_ok = false;
+				}
+				else {
+					code_ok = true;
+				}
+			});		
+
+			//是否同意协议
+			$("#agreen").click(function () {
+        if($(this).attr('checked')) {
+        	$(this).attr('checked',true);
+        }
+        else {
+        	$(this).attr('checked', true);
+        }
+			});
+
+			//
+			$("#btn").click(function(event) {
+				console.log($("#agreen").attr('checked'));
+				console.log(uname_ok);
+				console.log(confirm_pwd_ok);
+				console.log(pwd_ok);
+				console.log(phone_ok);
+				console.log(code_ok);
+				if($("#agreen").attr('checked') && uname_ok && confirm_pwd_ok&& pwd_error && phone_ok && code_ok) {
+					alert("提交成功！😊");
+				}
+				else {
+					alert("信息输入不完整，请核对");
+					return false;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
